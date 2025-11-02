@@ -36,6 +36,7 @@ ffEnv
 *.png
 *.jpg
 *.pdf
+orders.json
 
 # OS
 .DS_Store
