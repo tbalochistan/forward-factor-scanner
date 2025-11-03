@@ -1,0 +1,213 @@
+[
+  {
+    "summary": {
+      "ticker": "AAPL",
+      "underlying_price": 267.57,
+      "opportunity_type": "neutral",
+      "confidence_score": 2.0,
+      "forward_factor_pct": -4.081681596168644,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 46,
+      "near_term_iv": 23.586980666605722,
+      "next_term_iv": 24.59069451916451,
+      "near_term_liquidity_count": 12,
+      "next_term_liquidity_count": 2,
+      "primary_reason": "Insufficient liquid next-term options: 2"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 12,
+    "next_term_liquidity_count": 2,
+    "all_reasons": [
+      "Insufficient liquid next-term options: 2",
+      "Neutral: FF = -4.1% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "AAPL",
+      "underlying_price": 267.57,
+      "opportunity_type": "bearish",
+      "confidence_score": 2.614524420890385,
+      "forward_factor_pct": -5.229048841780769,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 74,
+      "near_term_iv": 23.586980666605722,
+      "next_term_iv": 24.888407659038343,
+      "near_term_liquidity_count": 12,
+      "next_term_liquidity_count": 2,
+      "primary_reason": "Insufficient liquid next-term options: 2"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 12,
+    "next_term_liquidity_count": 2,
+    "all_reasons": [
+      "Insufficient liquid next-term options: 2",
+      "Bearish signal: FF = -5.2% (front month depressed)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "AAPL",
+      "underlying_price": 267.57,
+      "opportunity_type": "neutral",
+      "confidence_score": 2.0,
+      "forward_factor_pct": -1.1961919940897288,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 24.59069451916451,
+      "next_term_iv": 24.888407659038343,
+      "near_term_liquidity_count": 2,
+      "next_term_liquidity_count": 2,
+      "primary_reason": "Insufficient liquid near-term options: 2"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 2,
+    "next_term_liquidity_count": 2,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 2",
+      "Insufficient liquid next-term options: 2",
+      "Neutral: FF = -1.2% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "TSLA",
+      "underlying_price": 468.59,
+      "opportunity_type": "neutral",
+      "confidence_score": 30.0,
+      "forward_factor_pct": -0.8121304203605946,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 46,
+      "near_term_iv": 57.129850704853204,
+      "next_term_iv": 57.597618485981094,
+      "near_term_liquidity_count": 30,
+      "next_term_liquidity_count": 33,
+      "primary_reason": "Neutral: FF = -0.8% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 30,
+    "next_term_liquidity_count": 33,
+    "all_reasons": [
+      "Neutral: FF = -0.8% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "TSLA",
+      "underlying_price": 468.59,
+      "opportunity_type": "neutral",
+      "confidence_score": 29.0,
+      "forward_factor_pct": -1.4196617950979389,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 74,
+      "near_term_iv": 57.129850704853204,
+      "next_term_iv": 57.95258136171857,
+      "near_term_liquidity_count": 30,
+      "next_term_liquidity_count": 29,
+      "primary_reason": "Neutral: FF = -1.4% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 30,
+    "next_term_liquidity_count": 29,
+    "all_reasons": [
+      "Neutral: FF = -1.4% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "TSLA",
+      "underlying_price": 468.59,
+      "opportunity_type": "neutral",
+      "confidence_score": 29.0,
+      "forward_factor_pct": -0.6125057200160433,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 57.597618485981094,
+      "next_term_iv": 57.95258136171857,
+      "near_term_liquidity_count": 33,
+      "next_term_liquidity_count": 29,
+      "primary_reason": "Neutral: FF = -0.6% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 33,
+    "next_term_liquidity_count": 29,
+    "all_reasons": [
+      "Neutral: FF = -0.6% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "NVDA",
+      "underlying_price": 207.67,
+      "opportunity_type": "neutral",
+      "confidence_score": 6.0,
+      "forward_factor_pct": 4.0641275939015005,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 46,
+      "near_term_iv": 48.25076137434413,
+      "next_term_iv": 46.366372822186406,
+      "near_term_liquidity_count": 21,
+      "next_term_liquidity_count": 6,
+      "primary_reason": "Neutral: FF = 4.1% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 21,
+    "next_term_liquidity_count": 6,
+    "all_reasons": [
+      "Neutral: FF = 4.1% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "NVDA",
+      "underlying_price": 207.67,
+      "opportunity_type": "bullish",
+      "confidence_score": 13.395107159007862,
+      "forward_factor_pct": 7.654346948004494,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 74,
+      "near_term_iv": 48.25076137434413,
+      "next_term_iv": 44.820077165716825,
+      "near_term_liquidity_count": 21,
+      "next_term_liquidity_count": 7,
+      "primary_reason": "Bullish signal: FF = 7.7% (front month elevated)"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 21,
+    "next_term_liquidity_count": 7,
+    "all_reasons": [
+      "Bullish signal: FF = 7.7% (front month elevated)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "NVDA",
+      "underlying_price": 207.67,
+      "opportunity_type": "neutral",
+      "confidence_score": 6.0,
+      "forward_factor_pct": 3.4500066806050778,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 46.366372822186406,
+      "next_term_iv": 44.820077165716825,
+      "near_term_liquidity_count": 6,
+      "next_term_liquidity_count": 7,
+      "primary_reason": "Neutral: FF = 3.5% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:30:20.636609",
+    "near_term_liquidity_count": 6,
+    "next_term_liquidity_count": 7,
+    "all_reasons": [
+      "Neutral: FF = 3.5% (within normal range)"
+    ]
+  }
+]

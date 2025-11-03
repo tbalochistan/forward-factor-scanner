@@ -1,0 +1,41 @@
+2025-11-03 10:30:14,152 - schwab_orders - INFO - Loaded credentials from local global_.py
+2025-11-03 10:30:14,152 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 10:30:14,153 - __main__ - INFO - ============================================================
+2025-11-03 10:30:14,153 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-03 10:30:14,153 - __main__ - INFO - ============================================================
+2025-11-03 10:30:14,153 - __main__ - INFO - Schwab API authentication successful
+2025-11-03 10:30:14,154 - __main__ - INFO - Using custom ticker list: 3 tickers
+2025-11-03 10:30:14,154 - __main__ - INFO - Scanning 3 midcap tickers
+2025-11-03 10:30:14,154 - __main__ - INFO - Beginning options chain scanning...
+2025-11-03 10:30:15,846 - options_scanner - INFO - Successfully retrieved option chain for AAPL
+2025-11-03 10:30:15,940 - __main__ - INFO - Scanning AAPL: 19 valid chains
+2025-11-03 10:30:15,941 - __main__ - INFO - Attempting 30/60 for AAPL: 32/46 DTE
+2025-11-03 10:30:15,946 - __main__ - INFO - Found 30/60 opportunity for AAPL: FF=-4.1% (DTE: 32/46) [Valid: True] Near IV: 23.6% Next IV: 24.6%
+2025-11-03 10:30:15,946 - __main__ - INFO - Attempting 30/90 for AAPL: 32/74 DTE
+2025-11-03 10:30:15,952 - __main__ - INFO - Found 30/90 opportunity for AAPL: FF=-5.2% (DTE: 32/74) [Valid: True] Near IV: 23.6% Next IV: 24.9%
+2025-11-03 10:30:15,952 - __main__ - INFO - Attempting 60/90 for AAPL: 46/74 DTE
+2025-11-03 10:30:15,958 - __main__ - INFO - Found 60/90 opportunity for AAPL: FF=-1.2% (DTE: 46/74) [Valid: True] Near IV: 24.6% Next IV: 24.9%
+2025-11-03 10:30:18,358 - options_scanner - INFO - Successfully retrieved option chain for TSLA
+2025-11-03 10:30:18,554 - __main__ - INFO - Scanning TSLA: 20 valid chains
+2025-11-03 10:30:18,555 - __main__ - INFO - Attempting 30/60 for TSLA: 32/46 DTE
+2025-11-03 10:30:18,560 - __main__ - INFO - Found 30/60 opportunity for TSLA: FF=-0.8% (DTE: 32/46) [Valid: True] Near IV: 57.1% Next IV: 57.6%
+2025-11-03 10:30:18,560 - __main__ - INFO - Attempting 30/90 for TSLA: 32/74 DTE
+2025-11-03 10:30:18,565 - __main__ - INFO - Found 30/90 opportunity for TSLA: FF=-1.4% (DTE: 32/74) [Valid: True] Near IV: 57.1% Next IV: 58.0%
+2025-11-03 10:30:18,565 - __main__ - INFO - Attempting 60/90 for TSLA: 46/74 DTE
+2025-11-03 10:30:18,571 - __main__ - INFO - Found 60/90 opportunity for TSLA: FF=-0.6% (DTE: 46/74) [Valid: True] Near IV: 57.6% Next IV: 58.0%
+2025-11-03 10:30:20,445 - options_scanner - INFO - Successfully retrieved option chain for NVDA
+2025-11-03 10:30:20,614 - __main__ - INFO - Scanning NVDA: 19 valid chains
+2025-11-03 10:30:20,615 - __main__ - INFO - Attempting 30/60 for NVDA: 32/46 DTE
+2025-11-03 10:30:20,620 - __main__ - INFO - Found 30/60 opportunity for NVDA: FF=4.1% (DTE: 32/46) [Valid: True] Near IV: 48.3% Next IV: 46.4%
+2025-11-03 10:30:20,620 - __main__ - INFO - Attempting 30/90 for NVDA: 32/74 DTE
+2025-11-03 10:30:20,627 - __main__ - INFO - Found 30/90 opportunity for NVDA: FF=7.7% (DTE: 32/74) [Valid: True] Near IV: 48.3% Next IV: 44.8%
+2025-11-03 10:30:20,627 - __main__ - INFO - Attempting 60/90 for NVDA: 46/74 DTE
+2025-11-03 10:30:20,634 - __main__ - INFO - Found 60/90 opportunity for NVDA: FF=3.5% (DTE: 46/74) [Valid: True] Near IV: 46.4% Next IV: 44.8%
+2025-11-03 10:30:20,634 - __main__ - INFO - ============================================================
+2025-11-03 10:30:20,634 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-03 10:30:20,634 - __main__ - INFO - ============================================================
+2025-11-03 10:30:20,635 - __main__ - INFO - Scan duration: 6.5 seconds
+2025-11-03 10:30:20,635 - __main__ - INFO - Tickers scanned: 3
+2025-11-03 10:30:20,635 - __main__ - INFO - Opportunities found: 9
+2025-11-03 10:30:20,637 - __main__ - INFO - Detailed results saved to: results\ff_opportunities_20251103_103020.json
+2025-11-03 10:30:20,638 - __main__ - INFO - CSV summary saved to: results\ff_opportunities_20251103_103020.csv

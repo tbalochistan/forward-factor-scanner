@@ -1,0 +1,27 @@
+2025-11-03 11:54:33,040 - schwab_orders - INFO - Loaded credentials from local global_.py
+2025-11-03 11:54:33,040 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 11:54:33,041 - __main__ - INFO - ============================================================
+2025-11-03 11:54:33,041 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-03 11:54:33,041 - __main__ - INFO - ============================================================
+2025-11-03 11:54:33,844 - options_scanner - INFO - Tokens saved successfully
+2025-11-03 11:54:33,847 - options_scanner - INFO - Access token refreshed successfully
+2025-11-03 11:54:33,849 - __main__ - INFO - Schwab API authentication successful
+2025-11-03 11:54:33,849 - __main__ - INFO - Using custom ticker list: 1 tickers
+2025-11-03 11:54:33,849 - __main__ - INFO - Scanning 1 midcap tickers
+2025-11-03 11:54:33,849 - __main__ - INFO - Beginning options chain scanning...
+2025-11-03 11:54:35,405 - options_scanner - INFO - Successfully retrieved option chain for EXAS
+2025-11-03 11:54:35,425 - __main__ - INFO - Scanning EXAS: 10 valid chains
+2025-11-03 11:54:35,426 - __main__ - INFO - Attempting 30/60 for EXAS: 25/46 DTE
+2025-11-03 11:54:35,426 - __main__ - INFO - Found 30/60 opportunity for EXAS: FF=28.2% (DTE: 25/46) [Valid: True] Near IV: 58.4% Next IV: 52.9%
+2025-11-03 11:54:35,427 - __main__ - INFO - Attempting 30/90 for EXAS: 25/74 DTE
+2025-11-03 11:54:35,428 - __main__ - INFO - Found 30/90 opportunity for EXAS: FF=31.6% (DTE: 25/74) [Valid: True] Near IV: 58.4% Next IV: 49.6%
+2025-11-03 11:54:35,428 - __main__ - INFO - Attempting 60/90 for EXAS: 46/74 DTE
+2025-11-03 11:54:35,429 - __main__ - INFO - Found 60/90 opportunity for EXAS: FF=21.7% (DTE: 46/74) [Valid: True] Near IV: 52.9% Next IV: 49.6%
+2025-11-03 11:54:35,429 - __main__ - INFO - ============================================================
+2025-11-03 11:54:35,429 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-03 11:54:35,429 - __main__ - INFO - ============================================================
+2025-11-03 11:54:35,430 - __main__ - INFO - Scan duration: 2.4 seconds
+2025-11-03 11:54:35,430 - __main__ - INFO - Tickers scanned: 1
+2025-11-03 11:54:35,430 - __main__ - INFO - Opportunities found: 3
+2025-11-03 11:54:35,431 - __main__ - INFO - Detailed results saved to: results\ff_opportunities_20251103_115435.json
+2025-11-03 11:54:35,432 - __main__ - INFO - CSV summary saved to: results\ff_opportunities_20251103_115435.csv

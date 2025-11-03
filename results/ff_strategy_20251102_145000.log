@@ -1,0 +1,18 @@
+2025-11-02 14:50:00,722 - forward_factor_strategy_fixed - INFO - ============================================================
+2025-11-02 14:50:00,723 - forward_factor_strategy_fixed - INFO - Starting Forward Factor Strategy Scan
+2025-11-02 14:50:00,723 - forward_factor_strategy_fixed - INFO - ============================================================
+2025-11-02 14:50:01,407 - forward_factor_strategy_fixed - INFO - Schwab API authentication successful
+2025-11-02 14:50:01,408 - forward_factor_strategy_fixed - INFO - Using custom ticker list: 5 tickers after midcap filtering
+2025-11-02 14:50:01,408 - forward_factor_strategy_fixed - INFO - Scanning 5 midcap tickers
+2025-11-02 14:50:01,409 - forward_factor_strategy_fixed - INFO - Beginning options chain scanning...
+2025-11-02 14:50:03,171 - options_scanner - INFO - Successfully retrieved option chain for TEAM
+2025-11-02 14:50:06,086 - options_scanner - INFO - Successfully retrieved option chain for OKTA
+2025-11-02 14:50:09,011 - options_scanner - INFO - Successfully retrieved option chain for ZS
+2025-11-02 14:50:13,249 - options_scanner - INFO - Successfully retrieved option chain for CRWD
+2025-11-02 14:50:14,829 - options_scanner - INFO - Successfully retrieved option chain for NET
+2025-11-02 14:50:14,836 - forward_factor_strategy_fixed - INFO - ============================================================
+2025-11-02 14:50:14,837 - forward_factor_strategy_fixed - INFO - Forward Factor Strategy Scan Complete
+2025-11-02 14:50:14,837 - forward_factor_strategy_fixed - INFO - ============================================================
+2025-11-02 14:50:14,837 - forward_factor_strategy_fixed - INFO - Scan duration: 14.1 seconds
+2025-11-02 14:50:14,837 - forward_factor_strategy_fixed - INFO - Tickers scanned: 5
+2025-11-02 14:50:14,837 - forward_factor_strategy_fixed - INFO - Opportunities found: 0

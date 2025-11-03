@@ -1,0 +1,18 @@
+2025-11-03 09:49:00,823 - schwab_orders - INFO - Loaded credentials from local global_.py
+2025-11-03 09:49:00,824 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 09:49:00,825 - __main__ - INFO - ============================================================
+2025-11-03 09:49:00,825 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-03 09:49:00,825 - __main__ - INFO - ============================================================
+2025-11-03 09:49:00,825 - __main__ - INFO - Schwab API authentication successful
+2025-11-03 09:49:00,827 - __main__ - INFO - Using custom ticker list: 1 tickers
+2025-11-03 09:49:00,827 - __main__ - INFO - Scanning 1 midcap tickers
+2025-11-03 09:49:00,827 - __main__ - INFO - Beginning options chain scanning...
+2025-11-03 09:49:08,535 - options_scanner - INFO - Successfully retrieved option chain for TSLA
+2025-11-03 09:49:08,722 - __main__ - INFO - ============================================================
+2025-11-03 09:49:08,722 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-03 09:49:08,722 - __main__ - INFO - ============================================================
+2025-11-03 09:49:08,723 - __main__ - INFO - Scan duration: 7.9 seconds
+2025-11-03 09:49:08,723 - __main__ - INFO - Tickers scanned: 1
+2025-11-03 09:49:08,723 - __main__ - INFO - Opportunities found: 3
+2025-11-03 09:49:08,725 - __main__ - INFO - Detailed results saved to: results\ff_opportunities_20251103_094908.json
+2025-11-03 09:49:08,727 - __main__ - INFO - CSV summary saved to: results\ff_opportunities_20251103_094908.csv

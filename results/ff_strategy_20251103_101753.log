@@ -1,0 +1,25 @@
+2025-11-03 10:17:53,236 - schwab_orders - INFO - Loaded credentials from local global_.py
+2025-11-03 10:17:53,237 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 10:17:53,237 - __main__ - INFO - ============================================================
+2025-11-03 10:17:53,237 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-03 10:17:53,237 - __main__ - INFO - ============================================================
+2025-11-03 10:17:53,238 - __main__ - INFO - Schwab API authentication successful
+2025-11-03 10:17:53,238 - __main__ - INFO - Using custom ticker list: 1 tickers
+2025-11-03 10:17:53,238 - __main__ - INFO - Scanning 1 midcap tickers
+2025-11-03 10:17:53,238 - __main__ - INFO - Beginning options chain scanning...
+2025-11-03 10:17:55,190 - options_scanner - INFO - Successfully retrieved option chain for NVDA
+2025-11-03 10:17:55,337 - __main__ - INFO - Scanning NVDA: 19 valid chains
+2025-11-03 10:17:55,338 - __main__ - INFO - Attempting 30/60 for NVDA: 32/46 DTE
+2025-11-03 10:17:55,343 - __main__ - INFO - Found 30/60 opportunity for NVDA: FF=-0.7% (DTE: 32/46) [Valid: True] Near IV: 4808.8% Next IV: 4842.8%
+2025-11-03 10:17:55,343 - __main__ - INFO - Attempting 30/90 for NVDA: 32/74 DTE
+2025-11-03 10:17:55,347 - __main__ - INFO - Found 30/90 opportunity for NVDA: FF=8.7% (DTE: 32/74) [Valid: True] Near IV: 4808.8% Next IV: 4425.5%
+2025-11-03 10:17:55,347 - __main__ - INFO - Attempting 60/90 for NVDA: 46/74 DTE
+2025-11-03 10:17:55,356 - __main__ - INFO - Found 60/90 opportunity for NVDA: FF=9.4% (DTE: 46/74) [Valid: True] Near IV: 4842.8% Next IV: 4425.5%
+2025-11-03 10:17:55,357 - __main__ - INFO - ============================================================
+2025-11-03 10:17:55,357 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-03 10:17:55,357 - __main__ - INFO - ============================================================
+2025-11-03 10:17:55,358 - __main__ - INFO - Scan duration: 2.1 seconds
+2025-11-03 10:17:55,358 - __main__ - INFO - Tickers scanned: 1
+2025-11-03 10:17:55,358 - __main__ - INFO - Opportunities found: 3
+2025-11-03 10:17:55,360 - __main__ - INFO - Detailed results saved to: results\ff_opportunities_20251103_101755.json
+2025-11-03 10:17:55,361 - __main__ - INFO - CSV summary saved to: results\ff_opportunities_20251103_101755.csv

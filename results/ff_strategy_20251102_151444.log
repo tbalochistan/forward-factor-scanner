@@ -1,0 +1,14 @@
+2025-11-02 15:14:59,830 - options_scanner - ERROR - Failed to retrieve option chain for SPY. Status: 502, Response: {"fault":{"faultstring":"Body buffer overflow","detail":{"errorcode":"protocol.http.TooBigBody"}}}
+2025-11-02 15:15:03,713 - options_scanner - INFO - Successfully retrieved option chain for QQQ
+2025-11-02 15:15:03,957 - options_scanner - INFO - Found optimal 30-60 day timeframe for QQQ: 26 vs 59
+2025-11-02 15:15:07,690 - options_scanner - INFO - Successfully retrieved option chain for QQQ
+2025-11-02 15:15:07,934 - options_scanner - INFO - Found optimal 30-60 day timeframe for QQQ: 26 vs 59
+2025-11-02 15:15:07,951 - iv_ff_analyzer - INFO - QQQ: Found neutral opportunity (FF: -2.8%, Confidence: 26.0)
+2025-11-02 15:15:09,708 - options_scanner - INFO - Successfully retrieved option chain for AAPL
+2025-11-02 15:15:09,802 - options_scanner - INFO - Using fallback timeframe for AAPL: 12 vs 26
+2025-11-02 15:15:11,819 - options_scanner - INFO - Successfully retrieved option chain for MSFT
+2025-11-02 15:15:11,936 - options_scanner - INFO - Using fallback timeframe for MSFT: 12 vs 26
+2025-11-02 15:15:19,539 - options_scanner - INFO - Successfully retrieved option chain for TSLA
+2025-11-02 15:15:19,702 - options_scanner - INFO - Using fallback timeframe for TSLA: 12 vs 26
+2025-11-02 15:15:21,539 - options_scanner - INFO - Successfully retrieved option chain for AMZN
+2025-11-02 15:15:21,620 - options_scanner - INFO - Using fallback timeframe for AMZN: 12 vs 26

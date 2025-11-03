@@ -1,0 +1,27 @@
+2025-11-03 10:54:05,760 - schwab_orders - INFO - Loaded credentials from local global_.py
+2025-11-03 10:54:05,761 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 10:54:05,762 - __main__ - INFO - ============================================================
+2025-11-03 10:54:05,762 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-03 10:54:05,762 - __main__ - INFO - ============================================================
+2025-11-03 10:54:05,762 - __main__ - INFO - Schwab API authentication successful
+2025-11-03 10:54:05,763 - __main__ - INFO - Using custom ticker list: 1 tickers
+2025-11-03 10:54:05,763 - __main__ - INFO - Scanning 1 midcap tickers
+2025-11-03 10:54:05,763 - __main__ - INFO - Beginning options chain scanning...
+2025-11-03 10:54:06,572 - options_scanner - INFO - Successfully retrieved option chain for AES
+2025-11-03 10:54:06,589 - __main__ - INFO - Scanning AES: 11 valid chains
+2025-11-03 10:54:06,590 - __main__ - INFO - Attempting 30/60 for AES: 32/46 DTE
+2025-11-03 10:54:06,590 - iv_ff_analyzer - ERROR - Error in analyze_chain_iv for AES: division by zero
+2025-11-03 10:54:06,591 - __main__ - WARNING - Error calculating FF for AES 30/60: division by zero
+2025-11-03 10:54:06,591 - __main__ - INFO - Attempting 30/90 for AES: 32/74 DTE
+2025-11-03 10:54:06,592 - iv_ff_analyzer - ERROR - Error in analyze_chain_iv for AES: division by zero
+2025-11-03 10:54:06,592 - __main__ - WARNING - Error calculating FF for AES 30/90: division by zero
+2025-11-03 10:54:06,593 - __main__ - INFO - Attempting 60/90 for AES: 46/74 DTE
+2025-11-03 10:54:06,593 - __main__ - INFO - Found 60/90 opportunity for AES: FF=18.6% (DTE: 46/74) [Valid: True] Near IV: 53.0% Next IV: 44.6%
+2025-11-03 10:54:06,593 - __main__ - INFO - ============================================================
+2025-11-03 10:54:06,594 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-03 10:54:06,594 - __main__ - INFO - ============================================================
+2025-11-03 10:54:06,594 - __main__ - INFO - Scan duration: 0.8 seconds
+2025-11-03 10:54:06,594 - __main__ - INFO - Tickers scanned: 1
+2025-11-03 10:54:06,595 - __main__ - INFO - Opportunities found: 1
+2025-11-03 10:54:06,598 - __main__ - INFO - Detailed results saved to: results\ff_opportunities_20251103_105406.json
+2025-11-03 10:54:06,599 - __main__ - INFO - CSV summary saved to: results\ff_opportunities_20251103_105406.csv

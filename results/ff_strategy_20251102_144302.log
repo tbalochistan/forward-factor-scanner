@@ -1,0 +1,14 @@
+2025-11-02 14:43:02,561 - __main__ - INFO - ============================================================
+2025-11-02 14:43:02,561 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-02 14:43:02,561 - __main__ - INFO - ============================================================
+2025-11-02 14:43:03,060 - __main__ - INFO - Schwab API authentication successful
+2025-11-02 14:43:03,061 - __main__ - INFO - Using custom ticker list: 1 tickers after midcap filtering
+2025-11-02 14:43:03,061 - __main__ - INFO - Scanning 1 midcap tickers
+2025-11-02 14:43:03,061 - __main__ - INFO - Beginning options chain scanning...
+2025-11-02 14:43:04,483 - options_scanner - INFO - Successfully retrieved option chain for TEAM
+2025-11-02 14:43:04,492 - __main__ - INFO - ============================================================
+2025-11-02 14:43:04,493 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-02 14:43:04,493 - __main__ - INFO - ============================================================
+2025-11-02 14:43:04,493 - __main__ - INFO - Scan duration: 1.9 seconds
+2025-11-02 14:43:04,493 - __main__ - INFO - Tickers scanned: 1
+2025-11-02 14:43:04,493 - __main__ - INFO - Opportunities found: 0

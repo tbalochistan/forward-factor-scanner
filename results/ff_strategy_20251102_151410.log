@@ -1,0 +1,7 @@
+2025-11-02 15:14:11,318 - options_scanner - INFO - Successfully retrieved option chain for CSX
+2025-11-02 15:14:11,323 - options_scanner - INFO - Using fallback timeframe for CSX: 12 vs 26
+2025-11-02 15:14:12,563 - options_scanner - INFO - Successfully retrieved option chain for FLNC
+2025-11-02 15:14:12,575 - options_scanner - INFO - Using fallback timeframe for FLNC: 19 vs 47
+2025-11-02 15:14:13,984 - options_scanner - INFO - Successfully retrieved option chain for AES
+2025-11-02 15:14:14,007 - options_scanner - INFO - Using fallback timeframe for AES: 12 vs 26
+2025-11-02 15:14:15,114 - options_scanner - ERROR - Failed to retrieve option chain for VIX. Status: 400, Response: {"errors":[{"id":"2538683e-e5e1-4d6c-94a4-8ccf063ad33b","status":"400","title":"Bad Request","detail":"Check Param Values","source":{"parameter":"Invalid Paramter/Value"}}]}

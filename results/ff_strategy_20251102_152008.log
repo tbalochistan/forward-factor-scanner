@@ -1,0 +1,5 @@
+2025-11-02 15:20:12,024 - options_scanner - INFO - Successfully retrieved option chain for QQQ
+2025-11-02 15:20:12,303 - options_scanner - INFO - Found optimal 60/90 timeframe for QQQ: 59 vs 89 DTE
+2025-11-02 15:20:15,547 - options_scanner - INFO - Successfully retrieved option chain for QQQ
+2025-11-02 15:20:15,788 - options_scanner - INFO - Found optimal 60/90 timeframe for QQQ: 59 vs 89 DTE
+2025-11-02 15:20:15,805 - iv_ff_analyzer - INFO - QQQ: Found bearish opportunity (FF: -8.1%, Confidence: 10.1)

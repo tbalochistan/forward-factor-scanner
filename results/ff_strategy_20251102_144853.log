@@ -1,0 +1,23 @@
+2025-11-02 14:48:53,149 - __main__ - INFO - ============================================================
+2025-11-02 14:48:53,149 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-02 14:48:53,149 - __main__ - INFO - ============================================================
+2025-11-02 14:48:53,630 - __main__ - INFO - Schwab API authentication successful
+2025-11-02 14:48:53,631 - __main__ - INFO - Using suggested midcap universe: 155 tickers
+2025-11-02 14:48:53,631 - __main__ - INFO - Limited to 50 tickers for performance
+2025-11-02 14:48:53,632 - __main__ - INFO - Scanning 50 midcap tickers
+2025-11-02 14:48:53,633 - __main__ - INFO - Beginning options chain scanning...
+2025-11-02 14:48:56,336 - options_scanner - INFO - Successfully retrieved option chain for TEAM
+2025-11-02 14:48:57,954 - options_scanner - INFO - Successfully retrieved option chain for OKTA
+2025-11-02 14:48:59,153 - options_scanner - INFO - Successfully retrieved option chain for ZS
+2025-11-02 14:49:00,826 - options_scanner - INFO - Successfully retrieved option chain for CRWD
+2025-11-02 14:49:03,907 - options_scanner - INFO - Successfully retrieved option chain for NET
+2025-11-02 14:49:05,261 - options_scanner - INFO - Successfully retrieved option chain for DDOG
+2025-11-02 14:49:06,770 - options_scanner - INFO - Successfully retrieved option chain for SNOW
+2025-11-02 14:49:06,777 - iv_ff_analyzer - INFO - SNOW: Found neutral opportunity (FF: -0.0%, Confidence: 5.0)
+2025-11-02 14:49:08,025 - options_scanner - INFO - Successfully retrieved option chain for PATH
+2025-11-02 14:49:09,018 - options_scanner - INFO - Successfully retrieved option chain for ESTC
+2025-11-02 14:49:10,301 - options_scanner - INFO - Successfully retrieved option chain for DOCU
+2025-11-02 14:49:11,666 - options_scanner - INFO - Successfully retrieved option chain for TWLO
+2025-11-02 14:49:12,864 - options_scanner - INFO - Successfully retrieved option chain for ZM
+2025-11-02 14:49:16,099 - options_scanner - INFO - Successfully retrieved option chain for PINS
+2025-11-02 14:49:17,398 - options_scanner - INFO - Successfully retrieved option chain for SNAP

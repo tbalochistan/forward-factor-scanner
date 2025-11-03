@@ -1,0 +1,27 @@
+[
+  {
+    "summary": {
+      "ticker": "AES",
+      "underlying_price": 13.63,
+      "opportunity_type": "bullish",
+      "confidence_score": 10.0,
+      "forward_factor_pct": 22.867986160543108,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 55.368858491638626,
+      "next_term_iv": 45.06369821939782,
+      "near_term_liquidity_count": 2,
+      "next_term_liquidity_count": 2,
+      "primary_reason": "Insufficient liquid near-term options: 2"
+    },
+    "scan_timestamp": "2025-11-03T10:51:46.987150",
+    "near_term_liquidity_count": 2,
+    "next_term_liquidity_count": 2,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 2",
+      "Insufficient liquid next-term options: 2",
+      "Bullish signal: FF = 22.9% (front month elevated)"
+    ]
+  }
+]

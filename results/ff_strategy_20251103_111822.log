@@ -1,0 +1,25 @@
+2025-11-03 11:18:22,732 - schwab_orders - INFO - Loaded credentials from local global_.py
+2025-11-03 11:18:22,742 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 11:18:22,743 - __main__ - INFO - ============================================================
+2025-11-03 11:18:22,743 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-03 11:18:22,744 - __main__ - INFO - ============================================================
+2025-11-03 11:18:22,744 - __main__ - INFO - Schwab API authentication successful
+2025-11-03 11:18:22,744 - __main__ - INFO - Using custom ticker list: 1 tickers
+2025-11-03 11:18:22,744 - __main__ - INFO - Scanning 1 midcap tickers
+2025-11-03 11:18:22,745 - __main__ - INFO - Beginning options chain scanning...
+2025-11-03 11:18:24,126 - options_scanner - INFO - Successfully retrieved option chain for SNOW
+2025-11-03 11:18:24,210 - __main__ - INFO - Scanning SNOW: 18 valid chains
+2025-11-03 11:18:24,210 - __main__ - INFO - Attempting 30/60 for SNOW: 32/46 DTE
+2025-11-03 11:18:24,212 - __main__ - INFO - Found 30/60 opportunity for SNOW: FF=3.3% (DTE: 32/46) [Valid: True] Near IV: 56.4% Next IV: 54.6%
+2025-11-03 11:18:24,212 - __main__ - INFO - Attempting 30/90 for SNOW: 32/74 DTE
+2025-11-03 11:18:24,214 - __main__ - INFO - Found 30/90 opportunity for SNOW: FF=12.9% (DTE: 32/74) [Valid: True] Near IV: 56.4% Next IV: 49.9%
+2025-11-03 11:18:24,214 - __main__ - INFO - Attempting 60/90 for SNOW: 46/74 DTE
+2025-11-03 11:18:24,215 - __main__ - INFO - Found 60/90 opportunity for SNOW: FF=9.3% (DTE: 46/74) [Valid: True] Near IV: 54.6% Next IV: 49.9%
+2025-11-03 11:18:24,216 - __main__ - INFO - ============================================================
+2025-11-03 11:18:24,216 - __main__ - INFO - Forward Factor Strategy Scan Complete
+2025-11-03 11:18:24,216 - __main__ - INFO - ============================================================
+2025-11-03 11:18:24,216 - __main__ - INFO - Scan duration: 1.5 seconds
+2025-11-03 11:18:24,217 - __main__ - INFO - Tickers scanned: 1
+2025-11-03 11:18:24,217 - __main__ - INFO - Opportunities found: 3
+2025-11-03 11:18:24,220 - __main__ - INFO - Detailed results saved to: results\ff_opportunities_20251103_111824.json
+2025-11-03 11:18:24,221 - __main__ - INFO - CSV summary saved to: results\ff_opportunities_20251103_111824.csv

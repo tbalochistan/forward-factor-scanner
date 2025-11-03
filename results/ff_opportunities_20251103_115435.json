@@ -1,0 +1,77 @@
+[
+  {
+    "summary": {
+      "ticker": "EXAS",
+      "underlying_price": 64.99,
+      "opportunity_type": "bullish",
+      "confidence_score": 5.0,
+      "forward_factor_pct": 28.18564697968003,
+      "forward_volatility_pct": null,
+      "near_term_dte": 25,
+      "next_term_dte": 46,
+      "near_term_iv": 58.38673840431377,
+      "next_term_iv": 52.913672755648676,
+      "near_term_liquidity_count": 1,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 1"
+    },
+    "scan_timestamp": "2025-11-03T11:54:35.431766",
+    "near_term_liquidity_count": 1,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 1",
+      "Insufficient liquid next-term options: 3",
+      "Bullish signal: FF = 28.2% (front month elevated)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "EXAS",
+      "underlying_price": 64.99,
+      "opportunity_type": "bullish",
+      "confidence_score": 5.0,
+      "forward_factor_pct": 31.578949152101515,
+      "forward_volatility_pct": null,
+      "near_term_dte": 25,
+      "next_term_dte": 74,
+      "near_term_iv": 58.38673840431377,
+      "next_term_iv": 49.553203337791594,
+      "near_term_liquidity_count": 1,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 1"
+    },
+    "scan_timestamp": "2025-11-03T11:54:35.431766",
+    "near_term_liquidity_count": 1,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 1",
+      "Insufficient liquid next-term options: 3",
+      "Bullish signal: FF = 31.6% (front month elevated)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "EXAS",
+      "underlying_price": 64.99,
+      "opportunity_type": "bullish",
+      "confidence_score": 15.0,
+      "forward_factor_pct": 21.718685038134932,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 52.913672755648676,
+      "next_term_iv": 49.553203337791594,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T11:54:35.431766",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 3",
+      "Bullish signal: FF = 21.7% (front month elevated)"
+    ]
+  }
+]

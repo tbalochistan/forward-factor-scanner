@@ -1,0 +1,77 @@
+[
+  {
+    "summary": {
+      "ticker": "CVNA",
+      "underlying_price": 316.25,
+      "opportunity_type": "neutral",
+      "confidence_score": 3.0,
+      "forward_factor_pct": -3.228406745047533,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 46,
+      "near_term_iv": 59.29766587822244,
+      "next_term_iv": 61.275901205840455,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T10:55:52.090222",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 3",
+      "Neutral: FF = -3.2% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "CVNA",
+      "underlying_price": 316.25,
+      "opportunity_type": "neutral",
+      "confidence_score": 3.0,
+      "forward_factor_pct": -1.614194787566605,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 74,
+      "near_term_iv": 59.29766587822244,
+      "next_term_iv": 60.27054995401792,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T10:55:52.090222",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 3",
+      "Neutral: FF = -1.6% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "CVNA",
+      "underlying_price": 316.25,
+      "opportunity_type": "neutral",
+      "confidence_score": 3.0,
+      "forward_factor_pct": 1.668063843103377,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 61.275901205840455,
+      "next_term_iv": 60.27054995401792,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T10:55:52.090222",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 3",
+      "Neutral: FF = 1.7% (within normal range)"
+    ]
+  }
+]

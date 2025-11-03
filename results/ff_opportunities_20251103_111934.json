@@ -1,0 +1,77 @@
+[
+  {
+    "summary": {
+      "ticker": "SNOW",
+      "underlying_price": 277.69,
+      "opportunity_type": "neutral",
+      "confidence_score": 3.0,
+      "forward_factor_pct": 2.262985514281067,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 46,
+      "near_term_iv": 55.93488350767913,
+      "next_term_iv": 54.69709614518129,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T11:19:34.702712",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 3",
+      "Neutral: FF = 2.3% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "SNOW",
+      "underlying_price": 277.69,
+      "opportunity_type": "bullish",
+      "confidence_score": 8.618605148905262,
+      "forward_factor_pct": 11.491473531873684,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 74,
+      "near_term_iv": 55.93488350767913,
+      "next_term_iv": 50.16965130673263,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 4,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T11:19:34.702712",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 4,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 4",
+      "Bullish signal: FF = 11.5% (front month elevated)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "SNOW",
+      "underlying_price": 277.69,
+      "opportunity_type": "bullish",
+      "confidence_score": 6.768202569470153,
+      "forward_factor_pct": 9.024270092626871,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 54.69709614518129,
+      "next_term_iv": 50.16965130673263,
+      "near_term_liquidity_count": 3,
+      "next_term_liquidity_count": 4,
+      "primary_reason": "Insufficient liquid near-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T11:19:34.702712",
+    "near_term_liquidity_count": 3,
+    "next_term_liquidity_count": 4,
+    "all_reasons": [
+      "Insufficient liquid near-term options: 3",
+      "Insufficient liquid next-term options: 4",
+      "Bullish signal: FF = 9.0% (front month elevated)"
+    ]
+  }
+]

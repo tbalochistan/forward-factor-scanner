@@ -1,0 +1,50 @@
+2025-11-02 14:47:38,938 - __main__ - INFO - ============================================================
+2025-11-02 14:47:38,938 - __main__ - INFO - Starting Forward Factor Strategy Scan
+2025-11-02 14:47:38,938 - __main__ - INFO - ============================================================
+2025-11-02 14:47:39,457 - __main__ - INFO - Schwab API authentication successful
+2025-11-02 14:47:39,457 - __main__ - INFO - Using suggested midcap universe: 155 tickers
+2025-11-02 14:47:39,458 - __main__ - INFO - Limited to 50 tickers for performance
+2025-11-02 14:47:39,458 - __main__ - INFO - Scanning 50 midcap tickers
+2025-11-02 14:47:39,459 - __main__ - INFO - Beginning options chain scanning...
+2025-11-02 14:47:42,241 - options_scanner - INFO - Successfully retrieved option chain for TEAM
+2025-11-02 14:47:44,740 - options_scanner - INFO - Successfully retrieved option chain for OKTA
+2025-11-02 14:47:47,836 - options_scanner - INFO - Successfully retrieved option chain for ZS
+2025-11-02 14:47:52,778 - options_scanner - INFO - Successfully retrieved option chain for CRWD
+2025-11-02 14:47:55,597 - options_scanner - INFO - Successfully retrieved option chain for NET
+2025-11-02 14:47:56,985 - options_scanner - INFO - Successfully retrieved option chain for DDOG
+2025-11-02 14:47:58,583 - options_scanner - INFO - Successfully retrieved option chain for SNOW
+2025-11-02 14:47:58,591 - iv_ff_analyzer - INFO - SNOW: Found neutral opportunity (FF: -0.0%, Confidence: 5.0)
+2025-11-02 14:48:00,626 - options_scanner - INFO - Successfully retrieved option chain for PATH
+2025-11-02 14:48:02,387 - options_scanner - INFO - Successfully retrieved option chain for ESTC
+2025-11-02 14:48:03,807 - options_scanner - INFO - Successfully retrieved option chain for DOCU
+2025-11-02 14:48:06,588 - options_scanner - INFO - Successfully retrieved option chain for TWLO
+2025-11-02 14:48:08,797 - options_scanner - INFO - Successfully retrieved option chain for ZM
+2025-11-02 14:48:10,686 - options_scanner - INFO - Successfully retrieved option chain for PINS
+2025-11-02 14:48:11,963 - options_scanner - INFO - Successfully retrieved option chain for SNAP
+2025-11-02 14:48:13,316 - options_scanner - INFO - Successfully retrieved option chain for UBER
+2025-11-02 14:48:13,322 - iv_ff_analyzer - INFO - UBER: Found neutral opportunity (FF: -0.0%, Confidence: 11.0)
+2025-11-02 14:48:14,784 - options_scanner - INFO - Successfully retrieved option chain for LYFT
+2025-11-02 14:48:16,208 - options_scanner - INFO - Successfully retrieved option chain for RBLX
+2025-11-02 14:48:17,489 - options_scanner - INFO - Successfully retrieved option chain for U
+2025-11-02 14:48:19,142 - options_scanner - INFO - Successfully retrieved option chain for PLTR
+2025-11-02 14:48:19,152 - iv_ff_analyzer - INFO - PLTR: Found neutral opportunity (FF: -0.0%, Confidence: 38.0)
+2025-11-02 14:48:21,142 - options_scanner - INFO - Successfully retrieved option chain for COIN
+2025-11-02 14:48:23,069 - options_scanner - INFO - Successfully retrieved option chain for MRNA
+2025-11-02 14:48:23,073 - iv_ff_analyzer - INFO - MRNA: Found neutral opportunity (FF: -0.0%, Confidence: 6.0)
+2025-11-02 14:48:24,864 - options_scanner - INFO - Successfully retrieved option chain for REGN
+2025-11-02 14:48:27,551 - options_scanner - INFO - Successfully retrieved option chain for BIIB
+2025-11-02 14:48:29,570 - options_scanner - INFO - Successfully retrieved option chain for ILMN
+2025-11-02 14:48:31,057 - options_scanner - INFO - Successfully retrieved option chain for VRTX
+2025-11-02 14:48:32,287 - options_scanner - INFO - Successfully retrieved option chain for ALNY
+2025-11-02 14:48:33,401 - options_scanner - INFO - Successfully retrieved option chain for BMRN
+2025-11-02 14:48:34,503 - options_scanner - ERROR - Failed to retrieve option chain for SGEN. Status: 400, Response: {"errors":[{"id":"3645750e-c890-4c72-b7b5-c12be26be580","status":"400","title":"Bad Request","detail":"Check Param Values","source":{"parameter":"Invalid Paramter/Value"}}]}
+2025-11-02 14:48:34,508 - iv_ff_analyzer - WARNING - SGEN: No valid option chains found
+2025-11-02 14:48:35,809 - options_scanner - INFO - Successfully retrieved option chain for TECH
+2025-11-02 14:48:38,102 - options_scanner - INFO - Successfully retrieved option chain for EXAS
+2025-11-02 14:48:39,205 - options_scanner - INFO - Successfully retrieved option chain for TDOC
+2025-11-02 14:48:41,297 - options_scanner - INFO - Successfully retrieved option chain for VEEV
+2025-11-02 14:48:42,761 - options_scanner - INFO - Successfully retrieved option chain for ZBH
+2025-11-02 14:48:44,412 - options_scanner - INFO - Successfully retrieved option chain for ALGN
+2025-11-02 14:48:45,799 - options_scanner - INFO - Successfully retrieved option chain for DXCM
+2025-11-02 14:48:47,598 - options_scanner - INFO - Successfully retrieved option chain for ISRG
+2025-11-02 14:48:48,712 - options_scanner - INFO - Successfully retrieved option chain for HOLX

@@ -1,0 +1,71 @@
+[
+  {
+    "summary": {
+      "ticker": "NVDA",
+      "underlying_price": 207.99,
+      "opportunity_type": "neutral",
+      "confidence_score": 5.0,
+      "forward_factor_pct": -0.7024516756845283,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 46,
+      "near_term_iv": 48.08772835905037,
+      "next_term_iv": 48.42791103159079,
+      "near_term_liquidity_count": 20,
+      "next_term_liquidity_count": 5,
+      "primary_reason": "Neutral: FF = -0.7% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:17:55.359010",
+    "near_term_liquidity_count": 20,
+    "next_term_liquidity_count": 5,
+    "all_reasons": [
+      "Neutral: FF = -0.7% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "NVDA",
+      "underlying_price": 207.99,
+      "opportunity_type": "bullish",
+      "confidence_score": 10.826264822519466,
+      "forward_factor_pct": 8.661011858015573,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 74,
+      "near_term_iv": 48.08772835905037,
+      "next_term_iv": 44.25481369700966,
+      "near_term_liquidity_count": 20,
+      "next_term_liquidity_count": 5,
+      "primary_reason": "Bullish signal: FF = 8.7% (front month elevated)"
+    },
+    "scan_timestamp": "2025-11-03T10:17:55.359010",
+    "near_term_liquidity_count": 20,
+    "next_term_liquidity_count": 5,
+    "all_reasons": [
+      "Bullish signal: FF = 8.7% (front month elevated)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "NVDA",
+      "underlying_price": 207.99,
+      "opportunity_type": "bullish",
+      "confidence_score": 11.787128297365054,
+      "forward_factor_pct": 9.429702637892044,
+      "forward_volatility_pct": null,
+      "near_term_dte": 46,
+      "next_term_dte": 74,
+      "near_term_iv": 48.42791103159079,
+      "next_term_iv": 44.25481369700966,
+      "near_term_liquidity_count": 5,
+      "next_term_liquidity_count": 5,
+      "primary_reason": "Bullish signal: FF = 9.4% (front month elevated)"
+    },
+    "scan_timestamp": "2025-11-03T10:17:55.359010",
+    "near_term_liquidity_count": 5,
+    "next_term_liquidity_count": 5,
+    "all_reasons": [
+      "Bullish signal: FF = 9.4% (front month elevated)"
+    ]
+  }
+]

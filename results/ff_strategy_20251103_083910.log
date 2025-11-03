@@ -1,0 +1,12 @@
+2025-11-03 08:39:10,147 - schwab_orders - INFO - Loaded credentials from schwab_credentials.json
+2025-11-03 08:39:10,149 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
+2025-11-03 08:39:10,150 - options_scanner - ERROR - Not authenticated. Call authenticate() first.
+2025-11-03 08:39:10,150 - iv_ff_analyzer - WARNING - SPY: No valid option chains found
+2025-11-03 08:39:10,150 - options_scanner - ERROR - Not authenticated. Call authenticate() first.
+2025-11-03 08:39:10,150 - iv_ff_analyzer - WARNING - QQQ: No valid option chains found
+2025-11-03 08:39:10,151 - options_scanner - ERROR - Not authenticated. Call authenticate() first.
+2025-11-03 08:39:10,152 - iv_ff_analyzer - WARNING - AAPL: No valid option chains found
+2025-11-03 08:39:10,152 - options_scanner - ERROR - Not authenticated. Call authenticate() first.
+2025-11-03 08:39:10,153 - iv_ff_analyzer - WARNING - MSFT: No valid option chains found
+2025-11-03 08:39:10,153 - options_scanner - ERROR - Not authenticated. Call authenticate() first.
+2025-11-03 08:39:10,153 - iv_ff_analyzer - WARNING - TSLA: No valid option chains found

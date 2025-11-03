@@ -1,0 +1,73 @@
+[
+  {
+    "summary": {
+      "ticker": "SPY",
+      "underlying_price": 680.4,
+      "opportunity_type": "neutral",
+      "confidence_score": 6.0,
+      "forward_factor_pct": -0.8477816924489845,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 58,
+      "near_term_iv": 15.929985835175225,
+      "next_term_iv": 16.066192070220243,
+      "near_term_liquidity_count": 21,
+      "next_term_liquidity_count": 6,
+      "primary_reason": "Neutral: FF = -0.8% (within normal range)"
+    },
+    "scan_timestamp": "2025-11-03T10:29:56.477378",
+    "near_term_liquidity_count": 21,
+    "next_term_liquidity_count": 6,
+    "all_reasons": [
+      "Neutral: FF = -0.8% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "SPY",
+      "underlying_price": 680.4,
+      "opportunity_type": "neutral",
+      "confidence_score": 3.0,
+      "forward_factor_pct": -4.718978860935756,
+      "forward_volatility_pct": null,
+      "near_term_dte": 32,
+      "next_term_dte": 88,
+      "near_term_iv": 15.929985835175225,
+      "next_term_iv": 16.718949529230112,
+      "near_term_liquidity_count": 21,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid next-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T10:29:56.477378",
+    "near_term_liquidity_count": 21,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid next-term options: 3",
+      "Neutral: FF = -4.7% (within normal range)"
+    ]
+  },
+  {
+    "summary": {
+      "ticker": "SPY",
+      "underlying_price": 680.4,
+      "opportunity_type": "neutral",
+      "confidence_score": 3.0,
+      "forward_factor_pct": -3.9042970843870246,
+      "forward_volatility_pct": null,
+      "near_term_dte": 58,
+      "next_term_dte": 88,
+      "near_term_iv": 16.066192070220243,
+      "next_term_iv": 16.718949529230112,
+      "near_term_liquidity_count": 6,
+      "next_term_liquidity_count": 3,
+      "primary_reason": "Insufficient liquid next-term options: 3"
+    },
+    "scan_timestamp": "2025-11-03T10:29:56.477378",
+    "near_term_liquidity_count": 6,
+    "next_term_liquidity_count": 3,
+    "all_reasons": [
+      "Insufficient liquid next-term options: 3",
+      "Neutral: FF = -3.9% (within normal range)"
+    ]
+  }
+]
