@@ -1,3 +1,5 @@
 tkinter
 requests
 argparse
+rich
+py_vollib
