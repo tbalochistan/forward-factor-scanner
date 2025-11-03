@@ -21,6 +21,25 @@ Uses the **proper variance-weighted formula** (not the naive ratio):
 
 **Signal Threshold:** FF > 20% indicates a significant volatility term structure opportunity.
 
+## IV Calculation Method
+
+### Option Selection for IV Calculation:
+For each expiration date (e.g., 25 DTE, 74 DTE), the system:
+
+1. **Delta-based filtering**: Selects options with delta between **35-50** (closest to ATM)
+2. **Includes both calls and puts** that meet the delta criteria
+3. **Applies liquidity filters**: Basic volume/OI and bid-ask spread checks
+4. **Calculates Black-Scholes IV** for each selected option using py_vollib
+5. **Averages all qualifying IVs** to get the final chain IV
+
+### Example:
+For SNOW 25 DTE chain:
+- Finds ~6-10 options (calls + puts) with 35-50 delta
+- Calculates individual IV for each using Black-Scholes
+- **Displayed IV (55.9%)** = Average of all qualifying option IVs
+
+This approach provides a **robust ATM IV estimate** independent of any single strike, representing the overall implied volatility of the most liquid near-the-money options.
+
 ## Setup
 
 1. Install dependencies:
@@ -124,3 +143,4 @@ Uses **delta-focused filtering** instead of strike-based:
 - Targets options with 35-50 delta (closest to ATM)
 - Automatically finds liquid ATM options regardless of strike price
 - Much more effective for smaller cap stocks than traditional volume/OI filters
+- Averages IV across multiple qualifying options for robust estimates
