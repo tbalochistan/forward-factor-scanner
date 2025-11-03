@@ -1,84 +1,126 @@
-# Professional Forward Factor Scanner
+# Forward Factor Scanner
 
-A Python-based Forward Factor options scanner that uses the same timeframes as professional trading platforms.
+A Python-based Forward Factor options scanner that calculates proper variance-weighted Forward Factor using Black-Scholes implied volatility calculations via py_vollib.
 
 ## What it does
 
-Scans options chains to find Forward Factor opportunities using professional timeframes:
-- **30/60 DTE**: 15-45 DTE vs 40-80 DTE  
-- **30/90 DTE**: 15-45 DTE vs 65-115 DTE
-- **60/90 DTE**: 40-80 DTE vs 65-115 DTE
+Scans options chains to find Forward Factor opportunities using different timeframes:
+- **30/60 DTE**: ~30 DTE vs ~60 DTE (with ±15/±20 day buffers)
+- **30/90 DTE**: ~30 DTE vs ~90 DTE (with ±15/±25 day buffers)  
+- **60/90 DTE**: ~60 DTE vs ~90 DTE (with ±20/±25 day buffers)
 
-The Forward Factor formula: `FF = (σ₁ - σ₂) / σ₂`
-- Positive FF: Front month IV elevated (potential bearish signal)
-- Negative FF: Front month IV depressed (potential bullish signal)
+## Forward Factor Calculation
+
+Uses the **proper variance-weighted formula** (not the naive ratio):
+
+1. Convert IV to variance: `V₁ = σ₁²`, `V₂ = σ₂²`
+2. Calculate time fractions: `T₁ = DTE₁/365`, `T₂ = DTE₂/365`
+3. Forward variance: `Vf = (V₂×T₂ - V₁×T₁) / (T₂ - T₁)`
+4. Forward volatility: `σf = √Vf`
+5. **Forward Factor: `FF = (σ₁ - σf) / σf`**
+
+**Signal Threshold:** FF > 20% indicates a significant volatility term structure opportunity.
 
 ## Setup
 
 1. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install schwab-py requests py_vollib rich pandas numpy
 ```
 
-2. Configure Schwab API credentials in your environment or `.env` file
+2. Configure Schwab API credentials in `global_.py`:
+```python
+# Set path to your classified_info.py file containing:
+# SCHWAB_API_KEY = "your_client_id"
+# SCHWAB_SECRET = "your_client_secret" 
+# REDIRECT_URI = "https://127.0.0.1"
+```
 
 ## Usage
 
-### Quick scan (recommended):
+### FF scanner (main):
 ```bash
-python professional_scanner.py
+python forward_factor_strategy_fixed.py --config ff_config_relaxed.json
 ```
 
-### Custom analysis:
-```python
-from forward_factor_strategy_fixed import ForwardFactorStrategy
+### Scan specific tickers:
+```bash
+python forward_factor_strategy_fixed.py --config ff_config_relaxed.json --tickers "AAPL,TSLA,NVDA"
+```
 
-strategy = ForwardFactorStrategy()
-opportunity = strategy.analyzer.scan_ticker_for_opportunities("SPY", strategy.scanner)
-
-if opportunity and opportunity.is_valid_opportunity:
-    summary = strategy.analyzer.get_opportunity_summary(opportunity)
-    print(f"Forward Factor: {summary['forward_factor_pct']:+.1f}%")
+### Single ticker analysis:
+```bash
+python forward_factor_strategy_fixed.py --config ff_config_relaxed.json --tickers "SNOW"
 ```
 
 ## Core Files
 
-- `professional_scanner.py` - Main scanner script
-- `forward_factor_strategy_fixed.py` - Strategy orchestrator  
-- `options_scanner.py` - Schwab API integration with professional timeframes
-- `iv_calculator.py` - Black-Scholes implied volatility calculations
-- `iv_ff_analyzer.py` - Forward Factor analysis engine
-- `liquidity_filter.py` - Filters for liquid options
-- `midcap_filter.py` - Midcap stock filter
-- `ff_config_default.json` - Configuration settings
+- `forward_factor_strategy_fixed.py` - **Main scanner script**
+- `iv_ff_analyzer.py` - Forward Factor calculation engine with proper variance-weighted formula
+- `options_scanner.py` - Schwab API integration and timeframe selection
+- `iv_calculator.py` - py_vollib Black-Scholes implied volatility calculations
+- `liquidity_filter.py` - Delta-focused liquidity filtering (35-50 delta ATM options)
+- `schwab_orders.py` - Schwab API authentication
+- `global_.py` - Credentials management
+- `ff_config_relaxed.json` - **Recommended configuration** (relaxed liquidity filters)
+- `ff_config_default.json` - Default configuration
 
-## Professional Timeframe Logic
+## Configuration
 
-The scanner automatically selects the best available timeframe combination:
-1. Tries 30/60 DTE with ±15/±20 day buffers
-2. Falls back to 30/90 DTE with ±15/±25 day buffers  
-3. Finally tries 60/90 DTE with ±20/±25 day buffers
-4. Uses fallback logic if no professional timeframes available
+Key settings in `ff_config_relaxed.json`:
 
-This matches how professional scanners like those found in trading platforms work.
+```json
+{
+  "forward_factor": {
+    "signal_threshold": 20.0  // FF > 20% = signal
+  },
+  "liquidity": {
+    "min_volume": 0,           // Very relaxed
+    "min_open_interest": 1,    // for smaller caps
+    "min_days_to_expiration": 7,
+    "max_days_to_expiration": 120
+  }
+}
+```
 
 ## Example Output
 
 ```
-=== Professional Forward Factor Scanner ===
-Timeframes: 30/60, 30/90, 60/90 DTE
+╭──────────────────────────────────────────────────────────────╮
+│               Forward Factor Scanner                         │
+╰──────────────────────────────────────────────────────────────╯
 
-Scanning SPY...
-  ✅ SPY: +12.3% Forward Factor (bullish)
-     Timeframe: 33/62 DTE
-     Confidence: 85.2
+🏷️  Timeframe: 30/60
+┏━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Ticker ┃ Price    ┃ Front Vol (DTE) ┃ Back Vol (DTE) ┃ Forward Factor  ┃ FF Threshold ┃ Pass/Fail ┃ Option Volume ┃
+┡━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│  SNOW  │ $277.69  │   55.9% (32)    │   54.7% (46)   │      2.3%       │    20.0%     │  ✗ FAIL   │              66 │
+└────────┴──────────┴─────────────────┴────────────────┴─────────────────┴──────────────┴───────────┴─────────────────┘
 
-Scanning QQQ...
-  ✅ QQQ: -8.1% Forward Factor (bearish)  
-     Timeframe: 59/89 DTE
-     Confidence: 92.1
+🏷️  Timeframe: 30/90  
+┏━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Ticker ┃ Price    ┃ Front Vol (DTE) ┃ Back Vol (DTE) ┃ Forward Factor  ┃ FF Threshold ┃ Pass/Fail ┃ Option Volume ┃
+┡━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│  SNOW  │ $277.69  │   55.9% (32)    │   50.2% (74)   │     11.5%       │    20.0%     │  ✗ FAIL   │              66 │
+└────────┴──────────┴─────────────────┴────────────────┴─────────────────┴──────────────┴───────────┴─────────────────┘
 
-=== TOP OPPORTUNITIES ===
-1. SPY: +12.3% (bullish) - 33/62 DTE
-2. QQQ: -8.1% (bearish) - 59/89 DTE
+📝 Summary: No Forward Factor opportunities found that meet >20% threshold criteria.
 ```
+
+## Key Features
+
+- ✅ **Mathematically correct Forward Factor** using variance-weighted calculation
+- ✅ **Rich table formatting** with color-coded results  
+- ✅ **Delta-focused liquidity filtering** (35-50 delta ATM options)
+- ✅ **py_vollib Black-Scholes IV calculations** (not broker-provided IV)
+- ✅ **DTE information display** for broker benchmark comparison
+- ✅ **Option volume data** for liquidity assessment
+- ✅ **Simplified configuration** (only FF threshold matters)
+- ✅ **Timeframe selection** with intelligent fallbacks
+
+## Liquidity Strategy
+
+Uses **delta-focused filtering** instead of strike-based:
+- Targets options with 35-50 delta (closest to ATM)
+- Automatically finds liquid ATM options regardless of strike price
+- Much more effective for smaller cap stocks than traditional volume/OI filters

@@ -1,5 +1,0 @@
-2025-11-02 15:29:22,686 - options_scanner - INFO - Successfully retrieved option chain for NVDA
-2025-11-02 15:29:22,802 - options_scanner - INFO - Found optimal 30/60 timeframe for NVDA: 33 vs 47 DTE
-2025-11-02 15:29:28,716 - options_scanner - INFO - Successfully retrieved option chain for NVDA
-2025-11-02 15:29:28,840 - options_scanner - INFO - Found optimal 30/60 timeframe for NVDA: 33 vs 47 DTE
-2025-11-02 15:29:28,848 - iv_ff_analyzer - INFO - NVDA: Found bullish opportunity (FF: 5.4%, Confidence: 38.1)

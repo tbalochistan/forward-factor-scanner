@@ -1,6 +1,0 @@
-2025-11-02 15:21:36,096 - options_scanner - INFO - Successfully retrieved option chain for COF
-2025-11-02 15:21:36,132 - options_scanner - WARNING - No professional timeframes available for COF, using fallback
-2025-11-02 15:21:36,133 - options_scanner - INFO - Using fallback timeframe for COF: 12 vs 26
-2025-11-02 15:21:37,399 - options_scanner - INFO - Successfully retrieved option chain for COF
-2025-11-02 15:21:37,427 - options_scanner - WARNING - No professional timeframes available for COF, using fallback
-2025-11-02 15:21:37,428 - options_scanner - INFO - Using fallback timeframe for COF: 12 vs 26

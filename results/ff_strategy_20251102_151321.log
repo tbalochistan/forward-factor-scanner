@@ -1,4 +1,0 @@
-2025-11-02 15:13:22,388 - options_scanner - INFO - Successfully retrieved option chain for CSX
-2025-11-02 15:13:24,071 - options_scanner - INFO - Successfully retrieved option chain for FLNC
-2025-11-02 15:13:25,532 - options_scanner - INFO - Successfully retrieved option chain for AES
-2025-11-02 15:13:26,670 - options_scanner - ERROR - Failed to retrieve option chain for VIX. Status: 400, Response: {"errors":[{"id":"a04155b8-01b0-41b4-a609-d11f461477a2","status":"400","title":"Bad Request","detail":"Check Param Values","source":{"parameter":"Invalid Paramter/Value"}}]}

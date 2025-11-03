@@ -1,7 +1,0 @@
-2025-11-03 08:37:36,660 - schwab_orders - INFO - Loaded credentials from schwab_credentials.json
-2025-11-03 08:37:36,676 - schwab_orders - WARNING - Error loading tokens: fromisoformat: argument must be str
-2025-11-03 08:37:36,677 - iv_ff_analyzer - ERROR - Error scanning SPY: 'SchwabOptionsScanner' object has no attribute '_is_token_expired'
-2025-11-03 08:37:36,677 - iv_ff_analyzer - ERROR - Error scanning QQQ: 'SchwabOptionsScanner' object has no attribute '_is_token_expired'
-2025-11-03 08:37:36,678 - iv_ff_analyzer - ERROR - Error scanning AAPL: 'SchwabOptionsScanner' object has no attribute '_is_token_expired'
-2025-11-03 08:37:36,679 - iv_ff_analyzer - ERROR - Error scanning MSFT: 'SchwabOptionsScanner' object has no attribute '_is_token_expired'
-2025-11-03 08:37:36,679 - iv_ff_analyzer - ERROR - Error scanning TSLA: 'SchwabOptionsScanner' object has no attribute '_is_token_expired'

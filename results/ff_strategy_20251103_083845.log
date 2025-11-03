@@ -1,7 +1,0 @@
-2025-11-03 08:38:45,235 - schwab_orders - INFO - Loaded credentials from schwab_credentials.json
-2025-11-03 08:38:45,236 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
-2025-11-03 08:38:45,236 - iv_ff_analyzer - ERROR - Error scanning SPY: maximum recursion depth exceeded
-2025-11-03 08:38:45,237 - iv_ff_analyzer - ERROR - Error scanning QQQ: maximum recursion depth exceeded
-2025-11-03 08:38:45,238 - iv_ff_analyzer - ERROR - Error scanning AAPL: maximum recursion depth exceeded
-2025-11-03 08:38:45,239 - iv_ff_analyzer - ERROR - Error scanning MSFT: maximum recursion depth exceeded
-2025-11-03 08:38:45,240 - iv_ff_analyzer - ERROR - Error scanning TSLA: maximum recursion depth exceeded

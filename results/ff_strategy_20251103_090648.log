@@ -1,4 +1,0 @@
-2025-11-03 09:06:48,148 - schwab_orders - INFO - Loaded credentials from local global_.py
-2025-11-03 09:06:48,148 - schwab_orders - INFO - Loaded existing tokens from C:\SchwabAccountConfig\DirectAPIUsage\token.json
-2025-11-03 09:06:49,791 - options_scanner - INFO - Successfully retrieved option chain for NVDA
-2025-11-03 09:06:57,199 - options_scanner - INFO - Successfully retrieved option chain for TSLA
