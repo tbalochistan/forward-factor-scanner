@@ -13,7 +13,6 @@ cred_location = "local"  # Default value is "local"
 
 # Determine the base path based on the operating system
 if platform.system() == "Linux":
-    # Use the user's home directory (e.g. for me its, /home/talmas Therefore final path will be: '/home/talmas/SchwabAccountConfig')
     base_path = os.path.join(str(Path.home()), 'SchwabAccountConfig')
 else:  
     # Assuming Windows
