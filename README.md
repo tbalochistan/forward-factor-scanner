@@ -44,7 +44,7 @@ This approach provides a **robust ATM IV estimate** independent of any single st
 
 1. Install dependencies:
 ```bash
-pip install schwab-py requests py_vollib rich pandas numpy
+pip install requests py_vollib rich pandas numpy
 ```
 
 2. Configure Schwab API credentials in `global_.py`:
