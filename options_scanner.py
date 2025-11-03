@@ -17,7 +17,7 @@ import logging
 from pathlib import Path
 
 # Import the existing Schwab API client
-from schwab_orders import SchwabAPIClient
+from schwab_api_utils import SchwabAPIClient
 
 # Import IV calculator
 from iv_calculator import ImpliedVolatilityCalculator

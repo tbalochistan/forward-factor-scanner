@@ -79,7 +79,7 @@ python forward_factor_strategy_fixed.py --config ff_config_relaxed.json --ticker
 - `options_scanner.py` - Schwab API integration and timeframe selection
 - `iv_calculator.py` - py_vollib Black-Scholes implied volatility calculations
 - `liquidity_filter.py` - Delta-focused liquidity filtering (35-50 delta ATM options)
-- `schwab_orders.py` - Schwab API authentication
+- `schwab_api_utils.py` - Schwab API authentication and utilities
 - `global_.py` - Credentials management
 - `ff_config_relaxed.json` - **Recommended configuration** (relaxed liquidity filters)
 - `ff_config_default.json` - Default configuration
