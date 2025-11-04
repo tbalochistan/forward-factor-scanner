@@ -44,8 +44,8 @@ def calculate_forward_factor(dte1: int, iv1: float, dte2: int, iv2: float) -> Fo
     Args:
         dte1: Days to expiration for near term
         iv1: Implied volatility for near term (as decimal, e.g., 0.25 for 25%)
-        dte2: Days to expiration for next term  
-        iv2: Implied volatility for next term (as decimal)
+        dte2: Days to expiration for next term
+        iv2: Implied volatility for next term (as decimal, e.g., 0.20 for 20%)
     
     Returns:
         ForwardFactorResult with calculation details
@@ -86,7 +86,23 @@ def calculate_forward_factor(dte1: int, iv1: float, dte2: int, iv2: float) -> Fo
             is_valid=False,
             error_message="Invalid IV values (not finite numbers)"
         )
-    
+
+    # Detect if percentage values were passed instead of decimals
+    # Valid IV decimals are typically 0.01 to 3.0 (1% to 300%)
+    # Values > 3.0 are almost certainly percentages (e.g., 25.0 instead of 0.25)
+    if iv1 > 3.0 or iv2 > 3.0:
+        return ForwardFactorResult(
+            forward_factor=0.0,
+            forward_factor_percent=0.0,
+            near_term_dte=dte1,
+            next_term_dte=dte2,
+            near_term_iv=iv1,
+            next_term_iv=iv2,
+            is_valid=False,
+            error_message=f"IV values appear to be percentages instead of decimals (iv1={iv1:.2f}, iv2={iv2:.2f}). "
+                         f"Expected decimal format (e.g., 0.25 for 25%). Convert by dividing by 100."
+        )
+
     # Step 1: Convert IV to variance
     v1 = iv1 * iv1  # V1 = σ1²
     v2 = iv2 * iv2  # V2 = σ2²
@@ -430,9 +446,9 @@ class IVForwardFactorAnalyzer:
         if near_iv.atm_iv is not None and next_iv.atm_iv is not None:
             ff_result = calculate_forward_factor(
                 dte1=near_chain.days_to_expiration,
-                iv1=near_iv.atm_iv,
+                iv1=near_iv.atm_iv / 100,  # Convert percentage to decimal (stored as 25.0, need 0.25)
                 dte2=next_chain.days_to_expiration,
-                iv2=next_iv.atm_iv
+                iv2=next_iv.atm_iv / 100   # Convert percentage to decimal (stored as 25.0, need 0.25)
             )
             
             if not ff_result.is_valid:
