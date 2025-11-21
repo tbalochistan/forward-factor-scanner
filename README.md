@@ -1,6 +1,8 @@
 # Forward Factor Scanner
 
 Option Chains are retrieved via Schwab API. Then the implied volatilities are calculated using Black-Scholes model using via py_vollib. FF is then calculated using those IVs.
+IMPORTANT: Schwab Token expires in 7 days, so you will need to run 'generate_token.py' script once a week to get updated token. 
+
 
 ## What it does
 
