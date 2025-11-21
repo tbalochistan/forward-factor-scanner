@@ -1,6 +1,6 @@
 # Forward Factor Scanner
 
-A Python-based Forward Factor options scanner that calculates proper variance-weighted Forward Factor using Black-Scholes implied volatility calculations via py_vollib.
+Option Chains are retrieved via Schwab API. Then the implied volatilities are calculated using Black-Scholes model using via py_vollib. FF is then calculated using those IVs.
 
 ## What it does
 
@@ -11,8 +11,6 @@ Scans options chains to find Forward Factor opportunities using different timefr
 
 ## Forward Factor Calculation
 
-Uses the **proper variance-weighted formula** (not the naive ratio):
-
 1. Convert IV to variance: `V₁ = σ₁²`, `V₂ = σ₂²`
 2. Calculate time fractions: `T₁ = DTE₁/365`, `T₂ = DTE₂/365`
 3. Forward variance: `Vf = (V₂×T₂ - V₁×T₁) / (T₂ - T₁)`
@@ -21,9 +19,9 @@ Uses the **proper variance-weighted formula** (not the naive ratio):
 
 **Signal Threshold:** FF > 20% indicates a significant volatility term structure opportunity.
 
-## IV Calculation Method
+## Scanner
 
-### Option Selection for IV Calculation:
+### DTE Selection (user configurable):
 For each expiration date (e.g., 25 DTE, 74 DTE), the system:
 
 1. **Delta-based filtering**: Selects options with delta between **35-50** (closest to ATM)
@@ -32,13 +30,22 @@ For each expiration date (e.g., 25 DTE, 74 DTE), the system:
 4. **Calculates Black-Scholes IV** for each selected option using py_vollib
 5. **Averages all qualifying IVs** to get the final chain IV
 
+
+## Liquidity Filters
+
+Uses **delta-focused filtering** instead of strike-based:
+- Targets options with 35-50 delta (closest to ATM)
+- Automatically finds liquid ATM options regardless of strike price
+- Much more effective for smaller cap stocks than traditional volume/OI filters
+- Averages IV across multiple qualifying options for robust estimates
+
 ### Example:
 For SNOW 25 DTE chain:
 - Finds ~6-10 options (calls + puts) with 35-50 delta
 - Calculates individual IV for each using Black-Scholes
-- **Displayed IV (55.9%)** = Average of all qualifying option IVs
+- **Displayed IV (e.g. 55.9%)** = Average of all qualifying option IVs
 
-This approach provides a **robust ATM IV estimate** independent of any single strike, representing the overall implied volatility of the most liquid near-the-money options.
+This approach provides a bit more **robust ATM IV estimate** independent of any single strike, representing the overall implied volatility of the most liquid near-the-money options.
 
 ## Setup
 
@@ -47,12 +54,19 @@ This approach provides a **robust ATM IV estimate** independent of any single st
 pip install requests py_vollib rich pandas numpy
 ```
 
+OR
+
+```bash
+pip install -r requirements.txt
+```
+
+
 2. Configure Schwab API credentials in `global_.py`:
 ```python
 # Set path to your classified_info.py file containing:
 # SCHWAB_API_KEY = "your_client_id"
 # SCHWAB_SECRET = "your_client_secret" 
-# REDIRECT_URI = "https://127.0.0.1"
+# REDIRECT_URI = "your redirect URL"
 ```
 
 ## Usage
@@ -82,7 +96,7 @@ python forward_factor_strategy_fixed.py --config ff_config_relaxed.json --ticker
 - `schwab_api_utils.py` - Schwab API authentication and utilities
 - `global_.py` - Credentials management
 - `ff_config_relaxed.json` - **Recommended configuration** (relaxed liquidity filters)
-- `ff_config_default.json` - Default configuration
+- `ff_config_strict.json` - Strict liquidity filters
 
 ## Configuration
 
@@ -125,22 +139,3 @@ Key settings in `ff_config_relaxed.json`:
 
 📝 Summary: No Forward Factor opportunities found that meet >20% threshold criteria.
 ```
-
-## Key Features
-
-- ✅ **Mathematically correct Forward Factor** using variance-weighted calculation
-- ✅ **Rich table formatting** with color-coded results  
-- ✅ **Delta-focused liquidity filtering** (35-50 delta ATM options)
-- ✅ **py_vollib Black-Scholes IV calculations** (not broker-provided IV)
-- ✅ **DTE information display** for broker benchmark comparison
-- ✅ **Option volume data** for liquidity assessment
-- ✅ **Simplified configuration** (only FF threshold matters)
-- ✅ **Timeframe selection** with intelligent fallbacks
-
-## Liquidity Strategy
-
-Uses **delta-focused filtering** instead of strike-based:
-- Targets options with 35-50 delta (closest to ATM)
-- Automatically finds liquid ATM options regardless of strike price
-- Much more effective for smaller cap stocks than traditional volume/OI filters
-- Averages IV across multiple qualifying options for robust estimates
